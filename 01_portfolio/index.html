@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" contentone="IE=edge">
+  <meta name="viewport" contentone="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>4U Studio</title>
+</head>
+<body>
+  <!-- scroll snap
+  https://query.tistory.com/entry/CSS-%EC%8A%A4%ED%81%AC%EB%A1%A4-%EC%8A%A4%EB%83%85-Scroll-Snap 
+  Great example
+  https://keithclark.co.uk/articles/practical-css-parallax/scroll-snap/#slide-1 -->
+  <section class="container">
+
+    <div class="banner img1">
+      <nav>
+        <img src="./assets/jedi.png" alt="logo" class="logo">
+        <ul>
+          <li><a href="#">home</a></li>
+          <li><a href="#">about</a></li>
+          <li><a href="#">modeling</a></li>
+          <li><a href="#">frontend</a></li>
+          <li><a href="#">contact</a></li>
+        </ul>
+      </nav>
+      <div class="contentone">
+        <h1>#dev_studio</h1>
+        <p>making stuff online since 2016<br>follow me on github to get the latest updates</p>
+        <div>
+          <button type="button"><span></span>PRODUCTS</button>
+          <button type="button" onclick= "window.open('https://github.com/rainsky3840')"><span></span>GITHUB</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="banner img2">
+      <div class="contentmain">
+        <!-- <h1>#who am i</h1>
+        <p>rainsky3840<br>skku undergraduate<br>amateur frontend developer</p> -->
+
+        <div class="container2">
+          <div class="card-profile">
+            <img src="./assets/discord.jpg"alt="image" class="profile-img">
+            <div class="info">
+              <h1>#about me</h1>
+              <p>SKKU undergraduate<br>Amateur frontend developer</p>
+              <ul>
+                <li><img src="./assets/location.png" alt="icon">Seoul, South Korea</li>
+                <li><img src="./assets/website.png" alt="icon">4udevstudio.tistory.com</li>
+                <li><img src="./assets/instagram.png" alt="icon">t3chno3o</li>
+              </ul>
+              <div class="links">
+                <a href="#" download=""><img src="./assets/download.png" alt="dl">Download CV</a>
+                <a href="#" target="_blank" class="msg-btn">Send a message</a>
+              </div>
+            </div>
+            <img src="./assets/share.png" alt="share" class="share-icon">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="banner img3">
+      <div class="row">
+        <div class="col col-title">
+          <h1>#modeling</h1>
+          <p>Since 2016, I've been making low-poly 3d models using the Metasequoia 4 program for use in Minecraft mods. Primarily consists of military aircraft and science fiction vehicles.</p>
+          <button type="button" onclick= "window.open('https://www.google.com/')"><span></span>EXPLORE</button>
+        </div>
+        <div class="col">
+          <div class="card card1">
+            <h5>Cold War Pack</h5>
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est perferendis nemo cupiditate aut voluptate in minus! Tempore eum, fugit nihil vel alias minus esse illo exercitationem eaque omnis aliquid rem.</p> -->
+          </div>
+          <div class="card card2">
+            <h5>Star Wars Pack</h5>
+          </div>
+          <div class="card card3">
+            <h5>Clone Wars Pack</h5>
+          </div>
+          <div class="card card4">
+            <h5>KF-21 Boramae</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="banner img4">
+      <div class="contentmain">
+        <h1>#frontend</h1>
+        <p>learning html, css, js, vue<br>team project: 2022 sw bootcamp project</p>
+      </div>
+    </div>
+
+  </section>
+</body>
+<script>
+  // function scroll1() {
+  //   window.scrollTo(0, 500);
+  // }
+</script>
+</html>

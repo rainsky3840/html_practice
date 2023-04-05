@@ -1,0 +1,301 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  scroll-snap-type: y mandatory;
+}
+.banner {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  scroll-snap-align: center;
+}
+.img1 {
+  background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.50)),url(https://fastly.picsum.photos/id/22/1280/720.jpg?hmac=l5td1EmGfhqrAjp72M-Mde0CsdpC5bOKAtSc7QGHSNA);
+}
+.img2 {
+  background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.50)),url(https://fastly.picsum.photos/id/494/1280/720.jpg?hmac=ZkwCNoi847F5gTucY4Vo0C-7iXHLG6rt_S1y4oGKSsk);
+}
+.img3 {
+  background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.50)),url(https://fastly.picsum.photos/id/51/1280/720.jpg?hmac=v6lnwZA1Mblajd_v5V7t0HzUOTYZkY5Z2BbjyEnuixk);
+}
+.img4 {
+  background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.50)),url(https://fastly.picsum.photos/id/943/1280/720.jpg?hmac=_RkuKhiJfzpR9makPrkN16JDvbuKAgNOdopMqfYaHCg);
+}
+nav {
+  width: 85%;
+  margin: auto;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 1px solid white; */
+}
+.logo {
+  width: 100px;
+  cursor: pointer;
+  /* border: 1px solid white; */
+}
+nav ul li {
+  list-style: none; 
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+nav ul li a:hover {
+  color: #84e1d8;
+}
+nav ul li::after {
+  content: '';
+  height: 3px;
+  width: 0%;
+  background: #009688;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+nav ul li:hover::after {
+  width: 100%;
+}
+.contentone {
+  width: 100%;
+  position: relative;
+  top: 25%;
+  transform: translateY(-50);
+  text-align: center;
+  color: #fff;
+}
+.contentone h1 {
+  font-size: 70px;
+  margin-top: -10vh;
+}
+.contentone p {
+  margin: 20px auto;
+  font-weight: 100;
+  line-height: 25px;
+}
+.contentmain {
+  color: rgba(255, 255, 255, 0.8);
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  max-width: 70%;
+  /* border: 1px solid white; */
+}
+.contentgallery {
+  color: rgba(255, 255, 255, 0.8);
+  display: inline-block;
+  position: relative;
+  left: 30%;
+  top: 50%;
+  transform: translateX(-30%) translateY(-50%);
+  max-width: 70%;
+}
+button {
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid #009688;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+button span {
+  background: #009688;
+  height: 100%;
+  width: 0;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: 0.5s;
+  z-index: -1;
+}
+button:hover span{
+  width: 100%;
+}
+button:hover {
+  border: 2px solid transparent;
+}
+/* ---------------------- */
+.row {
+  display: flex;
+  height: 100%;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid salmon; */
+}
+.col {
+  flex-basis: 50%;
+  align-items: center;
+  text-align: center;
+  /* border: 1px solid blue; */
+}
+.col > h1 {
+  color: white;
+  font-size: 60px;
+  margin-bottom: 20px;
+
+}
+.col > p {
+  width: 100%;
+  position: relative;
+  top: 25%;
+  transform: translateY(-50);
+  text-align: left;
+  color: #fff;
+}
+.card {
+  width: 200px;
+  height: 230px;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 12px;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 10px 15px;
+  background-position: center;
+  background-size: cover;
+  transition: transform 0.5s;
+  box-shadow: 10px 5px 5px rgb(100, 100, 100, 0.5);
+}
+.card1 {
+  background-image: url(https://fastly.picsum.photos/id/769/300/300.jpg?hmac=3VY-WmwBowieHTAINhNQBuNpmgKxTjNSnAnjMPSKZh8);
+}
+.card2 {
+  background-image: url(https://fastly.picsum.photos/id/769/300/300.jpg?hmac=3VY-WmwBowieHTAINhNQBuNpmgKxTjNSnAnjMPSKZh8);
+}
+.card3 {
+  background-image: url(https://fastly.picsum.photos/id/769/300/300.jpg?hmac=3VY-WmwBowieHTAINhNQBuNpmgKxTjNSnAnjMPSKZh8);
+}
+.card4 {
+  background-image: url(https://fastly.picsum.photos/id/769/300/300.jpg?hmac=3VY-WmwBowieHTAINhNQBuNpmgKxTjNSnAnjMPSKZh8);
+}
+.card:hover {
+  transform: translateY(-10px);
+}
+.card h5 {
+  color: white;
+  text-shadow: 0 0 5px #999;
+}
+.card p {
+  color: lightgray;
+  text-shadow: 0 0 15px #000;
+  font-size: 8px;
+}
+/* -------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+/* .container2 {
+  width: 100%;
+  height: 100vh;
+  background: #001a2b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+.card-profile {
+  background: rgba(200, 200, 200, 0.9);
+  display: flex;
+  align-items: center;
+  padding: 50px;
+  width: 900px;
+  border-radius: 10px;
+  position: relative;
+}
+.profile-img {
+  width: 150px;
+  border-radius: 50%;
+  border: 18px solid #f4eeff;
+}
+.info {
+  margin-left: 30px;
+  color: #555;
+  font-weight: 500;
+}
+.info h1 {
+  font-size: 26px;
+  font-weight: 500 bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+.info ul {
+  display: flex;
+  align-items: center;
+  margin: 10px 0 30px;
+}
+.info ul li {
+  list-style: none;
+  display: inline-flex;
+  align-items: center;
+  font-size: 12px;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+.info ul li img {
+  width: 20px;
+  margin-right: 5px;
+}
+.links a img {
+  width: 25px;
+  margin-right: 10px;
+}
+.links {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+.links a {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  height: 50px;
+  background: #8749fd;
+  color: #fff;
+  border-radius: 5px;
+  border: 2px solid #8749fd;
+  padding: 10px 30px;
+  margin-right: 20px;
+  font-size: 12px;
+}
+.links .msg-btn {
+  background: #fff;
+  color: #8749fd;
+}
+.share-icon {
+  width: 40px;
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  background: #f4eeff;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
